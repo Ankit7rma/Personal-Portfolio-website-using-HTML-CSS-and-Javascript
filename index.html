@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit - Portfolio
+
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(14, 14, 129);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(100, 100, 100);
+            font-size: 1rem;
+        }
+
+
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+
+            width: 34px 0;
+            font-size: 2.5rem;
+
+        }
+
+        .leftsection .btn {
+            background: purple;
+            color: white;
+            border: 2px solid white;
+            border-radius: 3px;
+            font-size: 20px;
+            padding: 12px;
+            cursor: pointer;
+
+        }
+
+
+        .rightsection img {
+
+            width: 80%;
+            margin: 20px 0;
+        }
+
+        .Purple {
+            color: purple;
+
+        }
+
+        #element {
+            color: rgb(146, 146, 238);
+        }
+
+        main hr {
+            border: 0;
+            color: red;
+            height: 1px;
+            background: rgb(109, 104, 94);
+            margin: 40px 10px;
+        }
+
+        .secondsection h1 {
+
+            font-size: 1.9rem;
+
+
+        }
+
+        .grey {
+            color: grey;
+        }
+
+        .secondsection .box {
+            background: white;
+            height: 2px;
+            width: 60vw;
+            margin: 50px;
+            display: flex;
+        }
+
+        .secondsection .verticle {
+
+            height: 30px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 20px;
+            position: relative;
+            top: -25px;
+
+        }
+
+        .verticle-title {
+            position: relative;
+            top: 10px;
+            width: 150px;
+
+
+        }
+
+        .verticle-desc {
+            position: relative;
+            font-size: 10px;
+            top: 20px;
+            width: 140px;
+
+        }
+
+        footer {
+            background-color: rgb(32, 22, 32);
+            padding: 15px 0;
+
+        }
+
+        .footer {
+            display: flex;
+
+            padding: 23px 120px;
+            justify-content: space-evenly;
+
+        }
+
+        .rights-text {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ankit Portfolio</div>
+            <div class="right">
+                <ul>
+
+                    <li><a href="/">Home</li></a>
+                    <li><a href="/">About me </li></a>
+                    <li><a href="/">Projects</li></a>
+                    <li><a href="/">Contact</li></a>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi my name is <span class="Purple">Ankit</span>
+                <div>and I am a passionate </div>
+                <!-- <div>Web Developer</div> -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Linkdin Profile</button>
+                </div>
+            </div>
+
+            <div class='rightsection'>
+                <img src="s.png" alt="jk">
+            </div>
+
+        </section>
+        <hr>
+
+        <section class="secondsection">
+            <span class="grey"> What I have done so far </span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="verticle">
+                    <img src="s.png" alt="0" class="image-top">
+                    <div class="verticle-title">Graduate Engineer Trainee 2022-Present</div>
+
+
+                    <div class="verticle-desc">
+                        Larsen and Toubro
+                    </div>
+                </div>
+                <div class="verticle">
+                    <img src="s.png" alt="0" class="image-top">
+                    <div class="verticle-title">Project Management Intern 2021(6 Months)</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+
+            <div class="f-first">
+                <h3>Ankit Developer Portfolio</h3>
+            </div>
+            <div class="f-second">
+                <ul>
+                    <li>Home </li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                    <li>Mail</li>
+                </ul>
+            </div>
+            <div class="f-third">Thankyou
+
+            </div>
+            <div class="f-forth">Bye
+
+            </div>
+        </div>
+        <div class="rights-text">Ankitsharma290101@gmail.com || All rights reserved</div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+
+</body>
+
+</html>
